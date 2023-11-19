@@ -1,4 +1,4 @@
-import BarraLateral from './containers'
+import BarraLateral from './containers/BarraLateral'
 import ListaDeTarefas from './containers/ListaDeTarefas'
 import EstiloGlobal, { Container } from './styles'
 
