@@ -5,20 +5,20 @@ const tarefas = [
   {
     titulo: 'Estudar TypeScript',
     descricao: 'Ver a aula 3 da EBAC',
-    prioridade: 'importante',
-    status: 'pendentes'
+    prioridade: 'urgente',
+    status: 'pendente'
+  },
+  {
+    titulo: 'Estudar TypeScript',
+    descricao: 'Ver a aula 3 da EBAC',
+    prioridade: 'normal',
+    status: 'concluido'
   },
   {
     titulo: 'Estudar TypeScript',
     descricao: 'Ver a aula 3 da EBAC',
     prioridade: 'importante',
-    status: 'pendentes'
-  },
-  {
-    titulo: 'Estudar TypeScript',
-    descricao: 'Ver a aula 3 da EBAC',
-    prioridade: 'importante',
-    status: 'pendentes'
+    status: 'pendente'
   }
 ]
 
