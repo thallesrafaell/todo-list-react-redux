@@ -23,7 +23,7 @@ const initialState: TarefasState = {
       titulo: 'Estudar JavaScript'
     },
     {
-      id: 1,
+      id: 3,
       descricao: 'Praticar a construçao de uma landpage',
       prioridade: enums.Prioridade.IMPORTANTE,
       status: enums.Status.PENDENTE,
@@ -37,7 +37,9 @@ const tarefaSlice = createSlice({
   initialState,
   reducers: {
     remover: (state, action: PayloadAction<number>) => {
-      state.itens = state.itens.filter((tarefa) => tarefa.id !== action.payload)
+      state.itens = [
+        ...state.itens.filter((tarefa) => tarefa.id !== action.payload)
+      ]
     }
   }
 })
