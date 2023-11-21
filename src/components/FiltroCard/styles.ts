@@ -1,6 +1,11 @@
 import styled from 'styled-components'
-import { Props } from '.'
-type PropsSemLengendaEContador = Omit<Props, 'contador' | 'legenda'>
+type PropsSemLengendaEContador = Omit<
+  Props,
+  'contador' | 'legenda' | 'criterio'
+>
+type Props = {
+  ativo: boolean
+}
 
 export const Card = styled.div<PropsSemLengendaEContador>`
   padding: 8px;
@@ -8,6 +13,7 @@ export const Card = styled.div<PropsSemLengendaEContador>`
   background-color: ${(props) => (props.ativo ? '#fff' : '#fcfcfc')};
   color: ${(props) => (props.ativo ? '#1e90ff' : '#5e5e5e')};
   border-radius: 8px;
+  cursor: pointer;
 `
 export const Contador = styled.span`
   font-weight: bold;
