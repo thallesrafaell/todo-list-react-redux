@@ -11,6 +11,7 @@ export type Props = {
 const FiltroCard = ({ legenda, criterio, valor }: Props) => {
   const dispach = useDispatch()
   const { filtro, tarefas } = useSelector((state: RootReducer) => state)
+
   const verificaCardAtivo = () => {
     const mesmoCriterio = filtro.criterio === criterio
     const mesmoValor = filtro.valor === valor
